@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Valley | Muhammad Hafeez — Valley Specialist</title>
+<meta name="description" content="Browse premium properties across The Valley by Emaar with Muhammad Hafeez, Valley Specialist at Coldwell Banker Swap Real Estate." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          ink: '#12110f',
+          sand: '#f6f3ee',
+          gold: '#a9812f',
+          goldlight: '#c9a35c',
+        },
+        fontFamily: {
+          serif: ['Cormorant Garamond', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-sand dark:bg-ink text-ink dark:text-sand font-sans antialiased transition-colors duration-300">
+
+<div id="root"></div>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script src="data.js"></script>
+<script type="text/babel" data-presets="react" src="app.jsx"></script>
+
+</body>
+</html>
